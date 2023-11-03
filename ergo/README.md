@@ -1,7 +1,7 @@
 ---
 namespace-identifier: ergo
 title: Ergo Blockchain
-author: ["Mark Glasgow (@glasgowm148)"]
+author: "Mark Glasgow (@glasgowm148)"
 status: Draft
 type: Informational
 created: 2023-11-03
