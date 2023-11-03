@@ -1,11 +1,11 @@
 ---
 namespace-identifier: ergo-caip2
 title: Ergo - Blockchain ID Specification
-author: ["Mark Glasgow (@glasgowm148)"]
+author: Mark Glasgow (@glasgowm148)
 status: Draft
 type: Standard
 created: 2023-11-03
-requires: "CAIP-2"
+requires: CAIP-2
 ---
 
 # CAIP-2

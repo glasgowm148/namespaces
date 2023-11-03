@@ -9,7 +9,7 @@ created: 2023-11-03
 
 # Namespace for Ergo Blockchain
 
-This document delineates the applicability of CAIP standards within the Ergo ecosystem, encompassing various projects issued as 'native tokens' standardized via [EIP-4][EIP4]
+This document delineates the applicability of CAIP standards within the Ergo ecosystem, encompassing various projects issued as 'native tokens' standardised via [EIP-0004: Asset Standard][EIP-0004]
 
 The Ergo blockchain is characterized by its distinctive design principles, advanced cryptographic features, and the ErgoScript smart contract language that employs an [extended UTXO (eUTXO)][UTXO vs Account: Understanding Ergo's Transaction Model] model.
 
@@ -31,7 +31,7 @@ Miners have the provision to vote on altering specific protocol parameters. Soft
 - [Miner Governance][] - Detailed documentation on Ergo's miner governance mechanism.
 - [EIPs][] - Ergo Improvement Proposals.
 - [UTXO vs Account: Understanding Ergo's Transaction Model][]
-- [EIP-4][] - Standardization of token issuance on Ergo.
+- [EIP-0004][] - Standardization of token issuance on Ergo.
 
 [Ergo Website]: https://ergoplatform.org/en/
 [Ergo GitHub]: https://github.com/ergoplatform
@@ -39,7 +39,7 @@ Miners have the provision to vote on altering specific protocol parameters. Soft
 [Miner Governance]: https://docs.ergoplatform.com/mining/governance/
 [EIPs]: https://github.com/ergoplatform/eips
 [UTXO vs Account: Understanding Ergo's Transaction Model]: https://docs.ergoplatform.com/dev/protocol/eutxo/accountveutxo/
-[EIP-4]: https://docs.ergoplatform.com/dev/tokens/standards/eip4/
+[EIP-0004]: https://docs.ergoplatform.com/dev/tokens/standards/eip4/
 
 
 ## Copyright
