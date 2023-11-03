@@ -23,9 +23,7 @@ Implementing CAIP-2 within the Ergo namespace provides a standard approach to bl
 ## Semantics
 
 
-The `namespace` "ergo" covers the Ergo blockchain network. The `reference` is a combination of the network type (mainnet, testnet) and the port number, which identifies a specific blockchain within the Ergo network.
-
-Let's look at the prefix byte, which contains information about the network and address types:
+The prefix byte contains information about the network and address types:
 
 Possible network types are:
 
@@ -38,6 +36,28 @@ Address types are (semantics described below):
 * `0x02` - Pay-to-Script-Hash(P2SH)
 * `0x03` - Pay-to-Script(P2S)
 
+Here is an example of a P2S addresses you'll see on the testnet: 
+
+* **P2PK** (`3WvsT2Gm4EpsM9Pg18PdY6XyhNNMqXDsvJTbbf6ihLvAmSb7u5RN`)
+* **P2SH** (`rbcrmKEYduUvADj9Ts3dSVSG27h54pgrq5fPuwB`)
+* **P2S** (`Ms7smJwLGbUAjuWQ`)
+
+And here is how what they look like on the mainnet:
+
+* **P2PK** (`9fRAWhdxEsTcdb8PhGNrZfwqa65zfkuYHAMmkQLcic1gdLSV5vA`)
+* **P2SH** (`8UApt8czfFVuTgQmMwtsRBZ4nfWquNiSwCWUjMg`)
+* **P2S** (`4MQyML64GnzMxZgm, BxKBaHkvrTvLZrDcZjcsxsF7aSsrN73ijeFZXtbj4CXZHHcvBtqSxQ`)
+
+> Note: **P2S** can start with any number, D, M, or any other of base58. `9` is always a **P2PK** address on the mainnet.
+
+In summary:
+
+* **Prefix byte** = `network type + address type` 
+    * (for example, P2S script on the testnet starts with `0x13` before Base58)
+* **checksum** = `leftmost_4_bytes (blake2b256 (prefix byte || content bytes))`
+* **address** = `prefix byte || content bytes || checksum`
+
+The `namespace` "ergo" covers the Ergo blockchain network. The `reference` is a combination of the network type (mainnet, testnet) and the port number, which identifies a specific blockchain within the Ergo network.
 
 
 ## Syntax
